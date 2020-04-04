@@ -32,19 +32,14 @@ public class Program {
         System.out.print("Informe o imposto a ser pago: ");
         employee.imposto = sc.nextDouble();
         
-        System.out.println("");
-        
-        System.out.println(employee.name + " salario liquido = R$ " + employee.NetSalary());
-        
-        System.out.println("");
+        System.out.println(employee);
         
         System.out.println("Informe o percentual de aumento do salario: (%)");
-        employee.percentualAumento = sc.nextDouble();
+        double percentage = sc.nextDouble();
+        employee.increaseSalary(percentage);
         
         System.out.println("");
         
-        System.out.println(employee.name + ", Salario bruto: R$ " + employee.salBruto + ", Salário líquido: R$ " + employee.IncreaseSalary() + ", Imposto: R$ " + employee.imposto);
-                
-              
+        System.out.println("Dados atualizados: " + employee);
     }
 }
