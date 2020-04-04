@@ -33,11 +33,9 @@ public class Program {
         employee.imposto = sc.nextDouble();
         
         System.out.println("");
-        System.out.println("");
         
         System.out.println(employee.name + " salario liquido = R$ " + employee.NetSalary());
         
-        System.out.println("");
         System.out.println("");
         
         System.out.println("Informe o percentual de aumento do salario: (%)");
@@ -45,7 +43,8 @@ public class Program {
         
         System.out.println("");
         
-        System.out.println(employee.name + ", Salario: " + 
-               employee.IncreaseSalary() + ", Imposto: " + employee.imposto);
+        System.out.println(employee.name + ", Salario bruto: R$ " + employee.salBruto + ", Salário líquido: R$ " + employee.IncreaseSalary() + ", Imposto: R$ " + employee.imposto);
+                
+              
     }
 }
